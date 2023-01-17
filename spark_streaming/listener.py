@@ -20,7 +20,8 @@ messages = [
     'Mensagem D',
     'Mensagem E',
     'Mensagem F',
-    'Mensagem G'
+    'Mensagem G',
+    'fim'
 ]
 
 for message in messages:

@@ -21,7 +21,7 @@ connection, address = s.accept()
 print(f'Recebendo solicitação de {address}')
 
 token = os.environ['TOKEN']
-keyword = 'Messi'
+keyword = 'yoyoyayameuyayameuyoyo'
 
 class GetTweets(tweepy.StreamingClient):
     def on_tweet(self, tweet):
@@ -31,7 +31,7 @@ class GetTweets(tweepy.StreamingClient):
 
 printer = GetTweets(token)
 print(printer.get_rules())
-# printer.delete_rules(['1615490694960877568'])
+printer.delete_rules(['1616124077692928001'])
 printer.add_rules(tweepy.StreamRule(keyword))
 # connection.close()
 # a = 1/0
